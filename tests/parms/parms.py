@@ -65,9 +65,9 @@ params_default = {
 }
 
 
-# Sample of logged "params" inputs logged when training on the BOWTE circuit track
+# Sample of logged "params" inputs logged when training on the BOWIE circuit track
 
-params_bowtle = {
+params_bowtie = {
     'heading': 0.5103798048625331,
     'all_wheels_on_track': True,
     'is_left_of_center': False,
@@ -229,9 +229,9 @@ params_reinvent2018 = {
 def get_copy_of_params(param_name=None):
     if param_name is None:
         return copy.deepcopy(params_default)
-    elif param_name == "BOWTLE":
-        return copy.deepcopy(params_bowtle)
-    elif param_name == "params_reinvent2018":
+    elif param_name == "BOWTIE":
+        return copy.deepcopy(params_bowtie)
+    elif param_name == "reinvent2018":
         return copy.deepcopy(params_reinvent2018)
     else:
         return None
